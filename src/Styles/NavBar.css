@@ -1,0 +1,70 @@
+/* NavBar.css */
+.nav {
+    /* Fixed positioning to stay at the top */
+    width: 100%;
+    min-height: 10%;
+    position: fixed;
+    /* background-color: rgba(0, 0, 0, 0) !important; */
+    z-index: 999; /* Lower z-index than logo */
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap; /* Prevent wrapping on larger screens */
+}
+
+.nav-item {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0 1em; /* Adjust padding for better spacing */
+    font-weight: 500;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+/* Ensure the dropdown aligns properly with other items */
+.nav-dropdown .dropdown-menu {
+    background-color: black; /* Match the background color */
+    border: none; /* Remove default border */
+    box-shadow: none; /* Remove default shadow */
+}
+
+.nav-dropdown .dropdown-toggle::after {
+    display: none; /* Hide the default dropdown arrow */
+}
+
+/* Media query for medium and smaller screens */
+@media (max-width: 992px) { /* Target medium and smaller screens */
+    .nav-container {
+        min-height: 10%;
+        flex-direction: column; /* Stacks the nav items vertically */
+        align-items: center; /* Center the items */
+    }
+
+    .nav-left, .nav-right {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .nav-item {
+        padding: 1em 0; 
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-dropdown .dropdown-menu {
+        width: 100%; /* Ensure the dropdown menu takes full width */
+        text-align: center; /* Center the dropdown items */
+    }
+}
