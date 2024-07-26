@@ -1,7 +1,6 @@
 import React from 'react'
 import Logo from './Logo'
 import Description from './Description'
-import Experience from './Experience'
 import Timeline from './Timeline'
 
 const Home = () => {
@@ -10,6 +9,7 @@ const Home = () => {
       <Logo/>
       <Description/>
       <Timeline/>
+
       <Description/>
 
     </div>
