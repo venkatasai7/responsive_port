@@ -77,7 +77,7 @@ const Projects = ({ direction = 'right', speed = 'fast' }) => {
 
     <div className='aboutcontent my-3'>
     <div className="container">
-    <button className='btn btn-primary bigbutton'  href="/">view projects</button>
+    <button className='btn btn-primary bigbutton'  href="/">View All Projects</button>
     </div>
      <div className="scroller" data-direction={direction} data-speed={speed}>
       <div className="scroller__inner">
