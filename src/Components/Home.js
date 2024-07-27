@@ -3,6 +3,7 @@ import Logo from './Logo'
 import Description from './Description'
 import Timeline from './Timeline'
 import Projects from './Projects'
+import WordCloud from './WordCloud'
 const Home = () => {
   return (
     <div>
@@ -11,6 +12,7 @@ const Home = () => {
       <Timeline/>
       <Projects/>
       <Description/>
+      <WordCloud/>
 
     </div>
   )

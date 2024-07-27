@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 100px;
 }
 
 .scroller__inner {
@@ -91,7 +92,8 @@
 
 
 .bigbutton{
- width: 15%;
+ padding-top: 15%;
+ min-width: 15%;
  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
  background-color: black !important;
 }

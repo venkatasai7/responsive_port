@@ -1,0 +1,51 @@
+.word-cloud-container {
+  position: relative;
+  width: 80vw; /* Adjust width as needed */
+  height: 80vh; /* Adjust height as needed */
+  margin: 0 auto; /* Center the word cloud */
+  padding: 1%;
+  overflow: hidden; /* Prevents overflow of logos */
+}
+
+.word-cloud-item {
+  position: absolute; /* Ensure logos are positioned absolutely within the container */
+  cursor: pointer; /* Add pointer cursor on hover */
+  transition: transform 0.5s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.word-cloud-item:hover {
+  transform: scale(1.5); /* Scale up on hover */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .word-cloud-container {
+    width: 70vw;
+    height: 70vh;
+  }
+}
+
+@media (max-width: 992px) {
+  .word-cloud-container {
+    width: 60vw;
+    height: 60vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .word-cloud-container {
+    width: 50vw;
+    height: 50vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .word-cloud-container {
+    width: 80vw;
+    height: 40vh;
+  }
+
+  .word-cloud-item:hover {
+    transform: scale(1.2); /* Smaller scale on smaller screens */
+  }
+}

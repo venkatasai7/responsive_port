@@ -14,24 +14,24 @@ const events = [
     location: 'Birmingham, USA',
     description: 'Dive deep into aspects of computer science including algorithms, Machine Leanring, and Deep learning.',
     tags: ['Machine Learning', 'Advanced Algorithms', 'Deep Learnings'],
-    buttonText: 'Explore'
+    buttonText: 'View Details'
   },
   {
     type: 'work',
     date: '2022 - 2023',
     title: 'Systems Engineer',
-    subtitle: 'Tech Company',
+    subtitle: 'Tata Consultancy Services',
     location: 'Hyderabad, IND',
     description: 'Developing and maintaining web applications using React and Node.js.',
     tags: ['SQL Server', 'ADF', 'Python'],
-    buttonText: 'Learn More'
+    buttonText: 'View Details'
   },
   {
     type: 'work',
     date: '2021 - 2022',
-    title: 'Junior Developer',
-    subtitle: 'Another Tech Company',
-    location: 'New York, NY',
+    title: 'Software Developer Engineer',
+    subtitle: 'Axiom io',
+    location: 'Secundrabad, IND',
     description: 'Worked on various web development projects using JavaScript and Python.',
     tags: ['JavaScript', 'Python', 'Development'],
     buttonText: 'View Details'
@@ -40,11 +40,11 @@ const events = [
     type: 'education',
     date: '2018 - 2022',
     title: 'Bachelor of Science in Computer Science',
-    subtitle: 'University Name',
-    location: 'City, Country',
+    subtitle: 'Anil Neerukonda Institute of Technology and Sciences',
+    location: 'Visakhapatnam, IND',
     description: 'Studied various aspects of computer science including algorithms, data structures, and software engineering.',
     tags: ['Computer Science', 'Algorithms', 'Data Structures'],
-    buttonText: 'Explore'
+    buttonText: 'View Details'
   },
   // Add more events here
 ];
@@ -68,15 +68,15 @@ const Timeline = () => {
             <Typography variant="subtitle1" component="h4">
               {event.subtitle} - {event.location}
             </Typography>
-            <Typography variant="body2" component="p">
+            {/* <Typography variant="body2" component="p">
               {event.description}
-            </Typography>
+            </Typography> */}
             <div>
               {event.tags.map((tag, index) => (
                 <Chip key={index} label={tag} style={{ margin: '5px' }} />
               ))}
             </div>
-            <Button variant="contained" color="primary">
+            <Button variant="contained" className='my-3' color="primary">
               {event.buttonText}
             </Button>
             

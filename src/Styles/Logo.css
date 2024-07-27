@@ -4,13 +4,14 @@
     background-color: #000000;
     /* border: 1px solid red; */
 }
+
 .logocontaine {
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
     border: 1px solid red;
-    background-image:   radial-gradient(circle, rgba(1, 1, 1, 1) 0%, rgba(0, 0, 0, 0) 190%), 
-                        url('../images/image.png');
+    /* background-image:   radial-gradient(circle, rgba(1, 1, 1, 1) 0%, rgba(0, 0, 0, 0) 190%), 
+                        url('../images/image.png'); */
     background-size: cover; /* Cover the entire navbar area */
     background-position: right center; /* Align image to the right and center vertically */
     background-repeat: no-repeat;
