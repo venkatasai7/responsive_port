@@ -60,6 +60,7 @@ const technologies = [
 ];
 
 
+
 const WordCloud = () => {
   const containerRef = useRef(null);
   const [positions, setPositions] = useState([]);
@@ -92,13 +93,10 @@ const WordCloud = () => {
       setSizes(newSizes);
     };
 
-    // Initial position and size update
     updatePositionsAndSizes();
 
-    // Refresh positions and sizes every 3 seconds
     const interval = setInterval(updatePositionsAndSizes, 3000);
 
-    // Update positions and sizes on window resize
     window.addEventListener('resize', updatePositionsAndSizes);
 
     return () => {
