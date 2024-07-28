@@ -1,24 +1,56 @@
 .word-cloud {
-  position: relative;
-  width: 97vw;
-  height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 20px;
   justify-content: center;
-  overflow: hidden;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  height: 85vh;
+  margin: 0 auto; /* Center the grid horizontally */
 }
 
 .techlogo {
-  width: 10vw; /* Adjust size as needed */
-  height: 10vh; /* Adjust size as needed */
+  width: 10vw; /* Adjusted logo size */
+  height: 10vw; /* Adjusted logo size */
+  max-width: 80px;
+  max-height: 80px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 10px; /* Adjust spacing as needed */
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  border-radius: 50%;
+  background-color: white;
+  border: 5px solid;
+  transition: transform 0.11s;
 }
 
 .techlogo:hover {
-  transform: scale(4);
+  transform: scale(1.1);
+}
+
+@media (min-width: 600px) {
+  .techlogo {
+    width: 8vw; /* Adjusted logo size */
+    height: 8vw; /* Adjusted logo size */
+    max-width: 80px;
+    max-height: 80px;
+  }
+}
+
+@media (min-width: 900px) {
+  .techlogo {
+    width: 6vw; /* Adjusted logo size */
+    height: 6vw; /* Adjusted logo size */
+    max-width: 80px;
+    max-height: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .techlogo {
+    width: 4vw; /* Adjusted logo size */
+    height: 4vw; /* Adjusted logo size */
+    max-width: 80px;
+    max-height: 80px;
+  }
 }
