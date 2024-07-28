@@ -1,34 +1,28 @@
 import Skills from './Skills';
 import React, { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import '../Styles/WordCloud.css';
-
-gsap.registerPlugin(ScrollTrigger);
 
 const WordCloud = () => {
   const cloudRef = useRef(null);
 
   useEffect(() => {
-    const element = cloudRef.current;
-    const logos = element.querySelectorAll('.techlogo');
-
-    gsap.fromTo(
-      logos,
-      { opacity: 0, scale: 0.5 },
-      { 
-        opacity: 1, 
-        scale: 2, 
-        duration: 2, // Animation duration
-        stagger: 0.1, 
-        ease: 'elastic.out(1.5, 0.5)',
-        scrollTrigger: {
-          trigger: element,
-          start: 'top center+=100', // Adjust as needed
-          toggleActions: 'play none none none'
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
         }
-      }
-    );
+      });
+    }, { threshold: 0.5 });
+
+    const logos = cloudRef.current.querySelectorAll('.techlogo');
+    logos.forEach((logo) => {
+      observer.observe(logo);
+    });
+
+    return () => {
+      observer.disconnect();
+    };
   }, []);
 
   return (

@@ -1,27 +1,40 @@
+:root {
+  --logo-size: 15vw;
+  --logo-max-size: 120px;
+  --gap-size: 2vw;
+}
+
 .word-cloud {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(var(--logo-size), 1fr));
+  gap: var(--gap-size);
   justify-content: center;
   align-items: center;
   width: 100%;
   max-width: 1200px;
-  height: 85vh;
+  height: 80vh;
   margin: 0 auto; /* Center the grid horizontally */
 }
 
 .techlogo {
-  width: 10vw; /* Adjusted logo size */
-  height: 10vw; /* Adjusted logo size */
-  max-width: 80px;
-  max-height: 80px;
+  width: var(--logo-size); /* Adjusted logo size */
+  height: var(--logo-size); /* Adjusted logo size */
+  max-width: var(--logo-max-size);
+  max-height: var(--logo-max-size);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
   background-color: white;
   border: 5px solid;
-  transition: transform 0.11s;
+  opacity: 0; /* Start hidden */
+  transform: scale(0.5); /* Start smaller */
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
+.techlogo.visible {
+  opacity: 1;
+  transform: scale(1); /* Scale up */
 }
 
 .techlogo:hover {
@@ -29,28 +42,22 @@
 }
 
 @media (min-width: 600px) {
-  .techlogo {
-    width: 8vw; /* Adjusted logo size */
-    height: 8vw; /* Adjusted logo size */
-    max-width: 80px;
-    max-height: 80px;
+  :root {
+    --logo-size: 12vw;
+    --gap-size: 1.5vw;
   }
 }
 
 @media (min-width: 900px) {
-  .techlogo {
-    width: 6vw; /* Adjusted logo size */
-    height: 6vw; /* Adjusted logo size */
-    max-width: 80px;
-    max-height: 80px;
+  :root {
+    --logo-size: 10vw;
+    --gap-size: 1vw;
   }
 }
 
 @media (min-width: 1200px) {
-  .techlogo {
-    width: 4vw; /* Adjusted logo size */
-    height: 4vw; /* Adjusted logo size */
-    max-width: 80px;
-    max-height: 80px;
+  :root {
+    --logo-size: 8vw;
+    --gap-size: 0.5vw;
   }
 }
