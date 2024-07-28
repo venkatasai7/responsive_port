@@ -1,15 +1,18 @@
 import React from 'react'
 import '../Styles/Experience.css'
-import axiomimage from '../images/Companies/axiom.jpg'
-import tcsvideo from '../images/Companies/tcsvideo.mp4'
+import axiomimage from '../images/organizations/axiom.jpg'
+import tcsimage from '../images/organizations/tcsjpg.jpg'
 
 const Experience = () => {
-    return (<div className='aboutcontent' style={{  height: '50vh'}}>
+    return (
+    
+    <div className="container">
+    <div className='aboutcontent'>
     <h3 style={{ float: 'right' }} >Experiences</h3>
        <div className="container-fluid" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '50vh' }}>
           <div className="maincontainer">
         <div className="thecard">
-        <div className="thefront" style={{ backgroundClip:`'url(${tcsvideo})` }}>
+        <div className="thefront" style={{ backgroundClip:`'url(${tcsimage})` }}>
           <h5 style={{ opacity:'0.25', textAlign: 'right',padding:'1%'}}>~Jun 2022 - Jul 2023 </h5>
           </div>
           <div className="theback">
@@ -38,7 +41,7 @@ const Experience = () => {
       </div> 
 
     </div>
-
+    </div>
     </div>
   );
 }

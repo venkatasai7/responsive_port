@@ -1,13 +1,9 @@
 /* Base styles */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-  }
+
   
   .aboutcontent {
     width: 100%;
-    height: 55vh;
+    min-height: 55vh;
     background-color: #fff;
     position: relative;
     display: flex;
@@ -22,14 +18,7 @@ body {
     font-size: 1rem; /* Use rem for responsive font size */
   }
   
-  .container-fluid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh; /* Use vh for responsive height */
-    width: 100%;
-  }
-  
+
   .maincontainer {
     display: flex;
     justify-content: center;

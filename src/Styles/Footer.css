@@ -1,0 +1,13 @@
+.foot{
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+}
+.footertext{
+    color: #ffffff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+
+}

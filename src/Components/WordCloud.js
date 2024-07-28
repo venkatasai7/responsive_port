@@ -22,7 +22,7 @@ const WordCloud = () => {
 
   return (
 <>
-<div className="container">
+<div className="container my-3">
 <button className='btn btn-primary bigbutton '  href="/">View All Skills</button>
 </div>
     <div className="word-cloud" ref={cloudRef}>
