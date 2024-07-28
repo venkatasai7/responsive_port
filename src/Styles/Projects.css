@@ -2,7 +2,7 @@
   display: flex; 
   justify-content: center; 
   align-items: center; 
-  max-width: 80%;
+  width: 90%; /* Adjust width as needed */
   margin: 0 auto;
 }
 
@@ -13,14 +13,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 5vh; /* Adjust padding as needed */
 }
 
 .scroller__inner {
-  padding: 1rem; /* Adjust padding as needed */
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  padding: 1rem; /* Adjust padding as needed */
 }
 
 .scroller[data-animated="true"] {
@@ -60,14 +60,13 @@
   }
 }
 
-/* general styles */
-
-
-/* Add this to your Projects.css */
+/* General styles */
 
 .card {
-  width: 35rem;
-  height: 30rem;
+  width: 90vw; /* Adjusted to be responsive */
+  max-width: 35rem;
+  height: 40vw; /* Adjusted to be responsive */
+  max-height: 30rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -76,6 +75,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  padding: 1rem; /* Adjust padding as needed */
 }
 
 .card-img-container {
@@ -89,11 +89,12 @@
   object-fit: cover;
 }
 
-
-
-.bigbutton{
- padding-top: 15%;
- min-width: 15%;
- box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
- background-color: black !important;
+.bigbutton {
+  padding: 1rem; /* Adjust padding as needed */
+  min-width: 15vw; /* Adjust width as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background-color: black !important;
+  color: white; /* Ensures text is visible */
+  font-size: 1.2rem; /* Adjust font size as needed */
+  text-align: center; /* Centers the text */
 }

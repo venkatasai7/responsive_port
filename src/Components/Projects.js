@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react';
 import '../Styles/Projects.css';
- 
-
 
 const Projects = ({ direction = 'right', speed = 'fast' }) => {
   useEffect(() => {
@@ -74,26 +72,26 @@ const Projects = ({ direction = 'right', speed = 'fast' }) => {
 
   return (
     <>
-
-    <div className='aboutcontent'>
-    <div className="container ">
-    <button className='btn btn-primary bigbutton '  href="/">View All Projects</button>
-    </div>
-     <div className="scroller" data-direction={direction} data-speed={speed}>
-      <div className="scroller__inner">
-        {cards.map((card) => (
-          <div key={card.id} className="card" style={{ width: '35rem',height:'30rem' , boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)'}}>
-            <img src={card.imageUrl} className="card-img-top" alt="" />
-            <div className="card-body">
-              {/*<h5 className="card-title">{card.title}</h5>*/}
-              <a href="/" className="btn btn-primary">{card.buttonText}</a>
-            </div>
+      <div className='aboutcontent'>
+        <div className="container">
+          <button className='btn btn-primary bigbutton' href="/">View All Projects</button>
+        </div>
+        <div className="scroller" data-direction={direction} data-speed={speed}>
+          <div className="scroller__inner">
+            {cards.map((card) => (
+              <div key={card.id} className="card">
+                <div className="card-img-container">
+                  <img src={card.imageUrl} className="card-img-top" alt="" />
+                </div>
+                <div className="card-body">
+                  <a href={card.buttonLink} className="btn btn-primary">{card.buttonText}</a>
+                </div>
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
-    </div>
-    </div>
-</>
+    </>
   );
 };
 
