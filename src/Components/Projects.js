@@ -49,6 +49,12 @@ const Projects = () => {
   ];
 
   return (
+    <div className="my-3">
+    <div className="container my-3">
+    <button className="btn btn-dark" href="/">
+          View All Projects
+        </button>
+    </div>
     <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
       <div className="carousel-inner">
         {cards.map((card, index) => (
@@ -69,6 +75,7 @@ const Projects = () => {
         <span className="carousel-control-next-icon" aria-hidden="true"></span>
         <span className="visually-hidden">Next</span>
       </button>
+    </div>
     </div>
   );
 };

@@ -1,130 +1,87 @@
-/* Base styles */
+.experience-container {
+  padding: 20px;
+}
 
-  
-  .aboutcontent {
-    width: 100%;
-    min-height: 55vh;
-    /* background-color: #fff; */
-    position: relative;
-    display: flex;
+.experience-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.experience-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.maincontainer {
+  perspective: 1000px;
+  width: 60vw; /* Increased width */
+  height: 50vh;
+  max-width: 700px; /* Increased max-width */
+  max-height: 500px;
+  display: flex; /* Added flex display */
+  justify-content: center; /* Centered the content */
+  align-items: center; /* Centered the content */
+}
+
+.thecard {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.thecard:hover {
+  transform: rotateY(180deg);
+}
+
+.thefront, .theback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.thefront {
+  background-size: contain; /* Ensure the whole image is visible */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgb(255, 255, 255);
+}
+
+.theback {
+  background: #f8f8f8;
+  transform: rotateY(180deg);
+}
+
+
+
+
+@media (max-width: 768px) {
+  .experience-content {
     flex-direction: column;
     align-items: center;
   }
-  
-  a {
-    padding: 1%;
-    text-decoration: none;
-    color: #000;
-    font-size: 1rem; /* Use rem for responsive font size */
-  }
-  
 
   .maincontainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 2%;
-    flex-direction: column; /* Stack vertically on smaller screens */
+    width: 80vw;
+    height: 50vh;
   }
-  
-  .thecard {
-    width: 90vw; /* Use vw for responsive width */
-    max-width: 650px; /* Limit the maximum width */
-    height: auto; /* Use auto height for responsive design */
-    aspect-ratio: 1.25 / 1; /* Maintain aspect ratio */
-    border-radius: 10px;
-    transform-style: preserve-3d;
-    transition: all 0.8s ease;
-    position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow */
-    margin-bottom: 2rem; /* Space between cards */
+}
+
+@media (max-width: 480px) {
+  .maincontainer {
+    width: 90vw;
+    height: 40vh;
   }
-  
-  .thecard:hover {
-    transform: rotateY(180deg);
-  }
-  
-  .thefront, .theback {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    backface-visibility: hidden;
-    overflow: hidden;
-  }
-  
-  .thefront {
-    color: #000;
-    background-size: cover; /* Cover the entire area */
-    background-position: center; /* Center the image */
-  }
-  
-  .theback {
-    background: #dfdede;
-    color: #333;
-    text-align: center;
-    transform: rotateY(180deg);
-  }
-  
-  .thefront h1, .theback h1 {
-    padding: 30px;
-    font-weight: bold;
-    font-size: 1.5rem; /* Use rem for responsive font size */
-    text-align: center;
-  }
-  
-  .thefront p, .theback p {
-    padding: 30px;
-    font-weight: normal;
-    font-size: 1rem; /* Use rem for responsive font size */
-    text-align: center;
-  }
-  
-  .btn {
-    margin-top: 1rem;
-  }
-  
-  /* Media Queries */
-  @media (max-width: 992px) {
-    .thecard {
-      width: 80vw; /* Increase width for smaller screens */
-    }
-  
-    .thefront h1, .theback h1 {
-      font-size: 1.25rem;
-    }
-  
-    .thefront p, .theback p {
-      font-size: 0.9rem;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .thecard {
-      width: 70vw; /* Increase width for smaller screens */
-    }
-  
-    .thefront h1, .theback h1 {
-      font-size: 1.1rem;
-    }
-  
-    .thefront p, .theback p {
-      font-size: 0.8rem;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .thecard {
-      width: 90vw; /* Increase width for smallest screens */
-    }
-  
-    .thefront h1, .theback h1 {
-      font-size: 1rem;
-    }
-  
-    .thefront p, .theback p {
-      font-size: 0.7rem;
-    }
-  }
-  
+}
