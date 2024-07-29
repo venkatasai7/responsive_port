@@ -1,100 +1,78 @@
-.scroller {
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  width: 90%; /* Adjust width as needed */
-  margin: 0 auto;
-}
-
-.aboutcontent {
+.carousel-item img {
   width: 100%;
-  background-color: #ffffff;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 5vh; /* Adjust padding as needed */
+  height: auto;
+  max-height: 60vh;
+  object-fit: cover;
+  padding: 2%;
 }
 
-.scroller__inner {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: 1rem; /* Adjust padding as needed */
+.carousel-caption {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  padding: 0 1rem;
+  z-index: 5;
 }
 
-.scroller[data-animated="true"] {
-  overflow: hidden;
-  -webkit-mask: linear-gradient(
-    90deg,
-    transparent,
-    white 10%,
-    white 90%,
-    transparent
-  );
-  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+.carousel-caption h5 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.scroller[data-animated="true"] .scroller__inner {
-  width: max-content;
-  flex-wrap: nowrap;
-  animation: scroll var(--_animation-duration, 40s)
-    var(--_animation-direction, forwards) linear infinite;
+.carousel-caption a {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 123, 255, 0.7);
+  border-radius: 0.25rem;
+  text-decoration: none;
+  color: white;
 }
 
-.scroller[data-direction="right"] {
-  --_animation-direction: reverse;
+.carousel-caption a:hover {
+  background-color: rgba(0, 123, 255, 0.9);
 }
 
-.scroller[data-direction="left"] {
-  --_animation-direction: forwards;
-}
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 50vh;
+  }
 
-.scroller[data-speed="slow"] {
-  --_animation-duration: 60s;
-}
+  .carousel-caption {
+    bottom: 15%;
+    font-size: 0.8rem;
+    padding: 0 0.5rem;
+  }
 
-@keyframes scroll {
-  to {
-    transform: translate(calc(-50% - 0.5rem));
+  .carousel-caption h5 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption a {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
   }
 }
 
-/* General styles */
+@media (max-width: 576px) {
+  .carousel-item img {
+    height: 40vh;
+  }
 
-.card {
-  width: 90vw; /* Adjusted to be responsive */
-  max-width: 35rem;
-  height: 40vw; /* Adjusted to be responsive */
-  max-height: 30rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
+  .carousel-caption {
+    bottom: 20%;
+    font-size: 0.7rem;
+    padding: 0 0.25rem;
+  }
 
-.card-body {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 1rem; /* Adjust padding as needed */
-}
+  .carousel-caption h5 {
+    font-size: 1rem;
+  }
 
-.card-img-container {
-  width: 100%;
-  height: 70%; /* Adjust this percentage as needed to fit your design */
-}
-
-.card-img-top {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.bigbutton {
-  padding: 1rem; /* Adjust padding as needed */
-  min-width: 15vw; /* Adjust width as needed */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  background-color: black !important;
-  color: white; /* Ensures text is visible */
-  font-size: 1.2rem; /* Adjust font size as needed */
-  text-align: center; /* Centers the text */
+  .carousel-caption a {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
 }

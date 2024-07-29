@@ -28,7 +28,7 @@ const WordCloud = () => {
   return (
     <>
       <div className="container my-3">
-        <button className="btn btn-primary bigbutton" href="/">
+        <button className="btn btn-dark" href="/">
           View All Skills
         </button>
       </div>

@@ -4,18 +4,18 @@ import Description from './Description'
 import Timeline from './Timeline'
 import Projects from './Projects'
 import WordCloud from './WordCloud'
-// import Experience from './Experience'
+import Experience from './Experience'
 import Footer from './Footer'
 const Home = () => {
   return (
-    <div>
+    <div style={{backgroundColor:'#dfdfdf'}}>
       <Logo/>
       <Description/>
       <Timeline/>
       <Projects/>
       <Description/>
+      <Experience/>
       <WordCloud/>
-      {/* <Experience/> */}
       <Footer/>
     </div>
   )

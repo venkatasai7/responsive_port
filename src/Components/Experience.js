@@ -11,18 +11,20 @@ const Experience = () => {
     <h3 style={{ float: 'right' }} >Experiences</h3>
        <div className="container-fluid" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '50vh' }}>
           <div className="maincontainer">
+          <div className="maincontainer">
         <div className="thecard">
-        <div className="thefront" style={{ backgroundClip:`'url(${tcsimage})` }}>
-          <h5 style={{ opacity:'0.25', textAlign: 'right',padding:'1%'}}>~Jun 2022 - Jul 2023 </h5>
+        <div className="thefront" style={{ backgroundImage:`url(${tcsimage})`}}>
+        <h5 style={{ opacity:'0.25', textAlign: 'right',padding:'1%'}}>~Sep 2021 - Apr 2022 </h5>
           </div>
           <div className="theback">
-            <h1>TATA CONSULTANCY SERVICES</h1>
+            <h1>AXIOM IO</h1>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus veritatis aspernatur eius beatae, tempora totam velit non nulla quis officiis culpa aliquam laudantium commodi reprehenderit nihil illum laboriosam impedit! Praesentium.
             </p>
             <button className='btn btn-primary'>Details</button>
           </div>
         </div>
+      </div> 
       </div>
 
        <div className="maincontainer">

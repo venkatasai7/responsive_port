@@ -4,7 +4,7 @@
   .aboutcontent {
     width: 100%;
     min-height: 55vh;
-    background-color: #fff;
+    /* background-color: #fff; */
     position: relative;
     display: flex;
     flex-direction: column;

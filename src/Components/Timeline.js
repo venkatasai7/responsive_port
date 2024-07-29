@@ -51,6 +51,7 @@ const events = [
 
 const Timeline = () => {
   return (
+    <div className="container">
     <VerticalTimeline lineColor="#9a9a9a">
       {events.map((event, index) => (
         <VerticalTimelineElement
@@ -84,6 +85,7 @@ const Timeline = () => {
         </VerticalTimelineElement>
       ))}
     </VerticalTimeline>
+    </div>
   );
 };
 
