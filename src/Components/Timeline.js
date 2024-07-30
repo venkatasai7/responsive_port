@@ -5,6 +5,8 @@ import WorkIcon from '@mui/icons-material/Work';
 import SchoolIcon from '@mui/icons-material/School';
 import { Button, Typography, Paper, Chip } from '@mui/material';
 import '../Styles/Timeline.css'
+import { useNavigate } from 'react-router-dom';
+
 const events = [
   {
     type: 'education',
@@ -50,46 +52,47 @@ const events = [
 ];
 
 const Timeline = () => {
+  const navigate = useNavigate();
+
+  const handleViewDetails = () => {
+    navigate('/education-experience');
+  };
+
   return (
     <div className="container">
-          <div className="container my-3">
-    <button className="btn btn-dark" href="/">
+      <div className="container my-3">
+        <button className="btn btn-dark" onClick={handleViewDetails}>
           View in Detail
         </button>
-    </div>
-    <VerticalTimeline lineColor="#9a9a9a">
-      {events.map((event, index) => (
-        <VerticalTimelineElement
-          key={index}
-          className={`vertical-timeline-element--${event.type}`}
-          date={event.date}
-          iconStyle={{ background: event.type === 'work' ? 'rgb(33, 150, 243)' : 'rgb(233, 30, 99)', color: '#fff' }}
-          icon={event.type === 'work' ? <WorkIcon /> : <SchoolIcon />}
-          // style={{border: '1px solid black'}}
-        >
-          <Paper elevation={0} className="timeline-card" >
-            <Typography variant="h6" component="h3">
-              {event.title}
-            </Typography>
-            <Typography variant="subtitle1" component="h4">
-              {event.subtitle} - {event.location}
-            </Typography>
-            {/* <Typography variant="body2" component="p">
-              {event.description}
-            </Typography> */}
-            <div>
-              {event.tags.map((tag, index) => (
-                <Chip key={index} label={tag} style={{ margin: '5px' }} />
-              ))}
-            </div>
-            <Button variant="contained" className='my-3' color="primary">
-              {event.buttonText}
-            </Button>
-            
-          </Paper>
-        </VerticalTimelineElement>
-      ))}
-    </VerticalTimeline>
+      </div>
+      <VerticalTimeline lineColor="#9a9a9a">
+        {events.map((event, index) => (
+          <VerticalTimelineElement
+            key={index}
+            className={`vertical-timeline-element--${event.type}`}
+            date={event.date}
+            iconStyle={{ background: event.type === 'work' ? 'rgb(33, 150, 243)' : 'rgb(233, 30, 99)', color: '#fff' }}
+            icon={event.type === 'work' ? <WorkIcon /> : <SchoolIcon />}
+          >
+            <Paper elevation={0} className="timeline-card">
+              <Typography variant="h6" component="h3">
+                {event.title}
+              </Typography>
+              <Typography variant="subtitle1" component="h4">
+                {event.subtitle} - {event.location}
+              </Typography>
+              <div>
+                {event.tags.map((tag, index) => (
+                  <Chip key={index} label={tag} style={{ margin: '5px' }} />
+                ))}
+              </div>
+              <Button variant="contained" className='my-3' color="primary">
+                {event.buttonText}
+              </Button>
+            </Paper>
+          </VerticalTimelineElement>
+        ))}
+      </VerticalTimeline>
     </div>
   );
 };
