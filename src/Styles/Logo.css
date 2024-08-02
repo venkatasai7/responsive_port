@@ -1,10 +1,30 @@
 .logocontainer {
     width: 100%;
-    height: 100vh;
-    background-color: #000000;
-    /* background-image: url("../images/logo/image.png"); */
-
+    height: 100vh; 
+    padding-top: 5%;/* Full viewport height */
+    background-color: #000000; /* Fallback color */
+    background-image: url("../images/logo/sketch.png"); /* Background image */
+    background-size: cover; /* Scales the image to cover the container */
+    background-position: center center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: scroll; /* Allows the background image to scroll with the page */
 }
+
+/* Optional: Further adjustments for specific screen sizes */
+@media (max-width: 768px) { /* For screens smaller than 768px */
+    .logocontainer {
+        background-size: cover; /* Ensures the image covers the container */
+        background-position: center center; /* Centers the image */
+    }
+}
+
+@media (min-width: 1200px) { /* For larger screens (e.g., desktop monitors) */
+    .logocontainer {
+        background-size: cover; /* Ensures the image covers the container */
+        background-position: center center; /* Centers the image */
+    }
+}
+
 
 
 .logo {
