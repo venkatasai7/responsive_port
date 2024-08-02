@@ -5,6 +5,8 @@
     min-height: 10%;
     position: fixed;
     /* background-color: rgba(0, 0, 0, 0) !important; */
+    /* background-color: #6867AC !important; */
+
     z-index: 999; /* Lower z-index than logo */
 }
 

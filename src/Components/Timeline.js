@@ -4,8 +4,9 @@ import 'react-vertical-timeline-component/style.min.css';
 import WorkIcon from '@mui/icons-material/Work';
 import SchoolIcon from '@mui/icons-material/School';
 import { Button, Typography, Paper, Chip } from '@mui/material';
-import '../Styles/Timeline.css'
 import { useNavigate } from 'react-router-dom';
+import '../Styles/Timeline.css'
+
 
 const events = [
   {
@@ -14,9 +15,10 @@ const events = [
     title: 'Master of Science in Computer Science',
     subtitle: 'University of Alabama at Birmingham',
     location: 'Birmingham, USA',
-    description: 'Dive deep into aspects of computer science including algorithms, Machine Leanring, and Deep learning.',
+    description: 'Dive deep into aspects of computer science including algorithms, Machine Learning, and Deep learning.',
     tags: ['Machine Learning', 'Advanced Algorithms', 'Deep Learnings'],
-    buttonText: 'View Details'
+    buttonText: 'View Details',
+    id: 'uabms'
   },
   {
     type: 'work',
@@ -26,7 +28,8 @@ const events = [
     location: 'Hyderabad, IND',
     description: 'Developing and maintaining web applications using React and Node.js.',
     tags: ['SQL Server', 'ADF', 'Python'],
-    buttonText: 'View Details'
+    buttonText: 'View Details',
+    id: 'tcs'
   },
   {
     type: 'work',
@@ -36,7 +39,8 @@ const events = [
     location: 'Secundrabad, IND',
     description: 'Worked on various web development projects using JavaScript and Python.',
     tags: ['JavaScript', 'Python', 'Development'],
-    buttonText: 'View Details'
+    buttonText: 'View Details',
+    id: 'axiom'
   },
   {
     type: 'education',
@@ -46,7 +50,8 @@ const events = [
     location: 'Visakhapatnam, IND',
     description: 'Studied various aspects of computer science including algorithms, data structures, and software engineering.',
     tags: ['Computer Science', 'Algorithms', 'Data Structures'],
-    buttonText: 'View Details'
+    buttonText: 'View Details',
+    id: 'anitsug'
   },
   // Add more events here
 ];
@@ -54,14 +59,14 @@ const events = [
 const Timeline = () => {
   const navigate = useNavigate();
 
-  const handleViewDetails = () => {
-    navigate('/education-experience');
+  const handleViewDetails = (id) => {
+    navigate(`/education-experience/${id}`);
   };
 
   return (
     <div className="container">
       <div className="container my-3">
-        <button className="btn btn-dark" onClick={handleViewDetails}>
+        <button className="btn btn-dark" onClick={() => navigate('/education-experience')}>
           View in Detail
         </button>
       </div>
@@ -86,7 +91,7 @@ const Timeline = () => {
                   <Chip key={index} label={tag} style={{ margin: '5px' }} />
                 ))}
               </div>
-              <Button variant="contained" className='my-3' color="primary">
+              <Button variant="contained" className='my-3' color="primary" onClick={() => handleViewDetails(event.id)}>
                 {event.buttonText}
               </Button>
             </Paper>

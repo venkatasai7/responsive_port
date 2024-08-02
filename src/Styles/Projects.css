@@ -15,10 +15,12 @@
   color: white;
   padding: 0 1rem;
   z-index: 5;
+  
 }
 
 .carousel-caption h5 {
   font-size: 1.5rem;
+  font-weight: 500;
   margin-bottom: 0.5rem;
 }
 

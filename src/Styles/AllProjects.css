@@ -1,0 +1,101 @@
+/* AllProjects.css */
+
+/* Keyframes for slide-in animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease-in-out forwards;
+}
+
+/* General card styling */
+.custom-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  background-color: #818FB4;
+  color: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+}
+
+.custom-card:hover {
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tech logo styling */
+.custom-card .tech-logo {
+  width: 40px; /* Increased size of logos */
+  height: 40px; /* Increased size of logos */
+  margin-left: 15px; /* Adjusted margin for better spacing */
+}
+
+/* Flexbox adjustments */
+.custom-card .d-flex {
+  display: flex;
+}
+
+.custom-card .flex-grow-1 {
+  flex-grow: 1;
+}
+
+.custom-card .ml-3 {
+  margin-left: 15px;
+}
+
+/* Category section styling */
+.category-section {
+  margin-bottom: 40px; /* Add space between categories */
+}
+
+/* Category heading styling */
+.category-heading {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+  color: #333; /* Adjust color as needed */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .custom-card {
+    flex-direction: column; /* Stack content vertically on smaller screens */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .custom-card .tech-logo {
+    margin-left: 0; /* Remove left margin on smaller screens */
+    margin-top: 10px; /* Add top margin to separate logos from text */
+  }
+
+  .category-heading {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: 769px) {
+  .custom-card {
+    flex-direction: row; /* Arrange content horizontally on larger screens */
+  }
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
