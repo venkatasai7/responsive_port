@@ -1,7 +1,7 @@
 .logocontainer {
+    position: relative; /* Allows positioning of the overlay */
     width: 100%;
-    height: 100vh; 
-    padding-top: 5%;/* Full viewport height */
+    height: 100vh; /* Full viewport height */
     background-color: #000000; /* Fallback color */
     background-image: url("../images/logo/sketch.png"); /* Background image */
     background-size: cover; /* Scales the image to cover the container */
@@ -10,21 +10,23 @@
     background-attachment: scroll; /* Allows the background image to scroll with the page */
 }
 
-/* Optional: Further adjustments for specific screen sizes */
-@media (max-width: 768px) { /* For screens smaller than 768px */
-    .logocontainer {
-        background-size: cover; /* Ensures the image covers the container */
-        background-position: center center; /* Centers the image */
-    }
+/* Overlay */
+.logocontainer::before {
+    content: ""; /* Required to display the pseudo-element */
+    position: absolute; /* Position it relative to the container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black color with 50% opacity */
+    z-index: 1; /* Ensure it sits on top of the background image but below text */
 }
 
-@media (min-width: 1200px) { /* For larger screens (e.g., desktop monitors) */
-    .logocontainer {
-        background-size: cover; /* Ensures the image covers the container */
-        background-position: center center; /* Centers the image */
-    }
+/* Ensure text is on top of the overlay */
+.logocontainer > * {
+    position: relative; /* Ensures child elements are above the overlay */
+    z-index: 2;
 }
-
 
 
 .logo {
