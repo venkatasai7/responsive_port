@@ -25,7 +25,7 @@ const Logo = () => {
     tl.fromTo(
       ".logo",
       {
-        y: "40vh",
+        y: "45vh",
         scale: 2,
         yPercent: -5,
       },

@@ -93,8 +93,12 @@ const AllProjects = () => {
   return (
     <div>
       <NavBar />
+      <p className="NavLogo">Venkata Sai Kuniganti</p>
+          <div className="container">
+            <h2 className="section-title">Work Experience</h2>
+          </div>
       <br /><br /><br /><br />
-      <h1 className="text-center">Projects</h1>
+      <h1 className="text-center">Projects </h1>
       <div className="container mt-5">
         {Object.keys(categories).map((category) => (
           <div key={category} className="category-section">
