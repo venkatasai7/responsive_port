@@ -39,7 +39,7 @@ const Logo = () => {
 
   return (
     <div>
-      <NavBar flag={showAlternateText}/>
+      <NavBar />
       <div className="logo-logocontainer">
         <p className="logo">
           {showAlternateText ? (
