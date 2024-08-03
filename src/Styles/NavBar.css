@@ -1,9 +1,12 @@
+/* NavBar.css */
 .nav {
     /* Fixed positioning to stay at the top */
     width: 100%;
     min-height: 10%;
     position: fixed;
-    background-color: rgba(0, 0, 0, 0) !important;
+    /* background-color: rgba(0, 0, 0, 0) !important; */
+    /* background-color: #6867AC !important; */
+
     z-index: 999; /* Lower z-index than logo */
 }
 
@@ -28,29 +31,28 @@
     padding: 0 1em; /* Adjust padding for better spacing */
     font-weight: 500;
     font-size: 15px;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9); 
+    /* text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);  */
     display: flex;
     align-items: center;
 }
 
 /* Ensure the dropdown aligns properly with other items */
 .nav-dropdown .dropdown-menu {
-    background-color: black; /* Match the background color */
+    /* background-color: black ; Match the background color */
     border: none; /* Remove default border */
     box-shadow: none; /* Remove default shadow */
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9); 
+    /* text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);  */
 }
 
 .nav-dropdown .dropdown-toggle::after {
     display: none; /* Hide the default dropdown arrow */
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9); 
+    /* text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);  */
 }
 
 /* Media query for medium and smaller screens */
 @media (max-width: 992px) { /* Target medium and smaller screens */
     .nav-container {
         min-height: 10%;
-        min-height: 700px;
         flex-direction: column; /* Stacks the nav items vertically */
         align-items: center; /* Center the items */
     }

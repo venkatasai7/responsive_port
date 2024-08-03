@@ -13,7 +13,7 @@ const Logo = () => {
         end: "top center",
         scrub: true,
         onUpdate: (self) => {
-          if (self.progress > 0.5) {
+          if (self.progress > 0.9) {
             setShowAlternateText(true);
           } else {
             setShowAlternateText(false);
@@ -39,7 +39,7 @@ const Logo = () => {
 
   return (
     <div>
-      <NavBar />
+      <NavBar flag={showAlternateText}/>
       <div className="logo-logocontainer">
         <p className="logo">
           {showAlternateText ? (

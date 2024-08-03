@@ -10,21 +10,23 @@ import Text from './Text';
 import Spinner from './Spinner'; // Import the Spinner component
 
 const Home = () => {
+
   const [isLoading, setIsLoading] = useState(true);
 
-  // Use useEffect to simulate loading delay (you can replace this with real data fetching logic)
   useEffect(() => {
-    // Simulate a loading delay
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1000); // Adjust the delay as needed
+    }, 1000); 
 
-    return () => clearTimeout(timer); // Cleanup timer on component unmount
+    return () => clearTimeout(timer); 
   }, []);
 
   if (isLoading) {
-    return <Spinner />; // Show spinner while loading
+    return <Spinner />; 
   }
+
+
+
 
   return (
     <div style={{ backgroundColor: '#dfdfdf' }}>
