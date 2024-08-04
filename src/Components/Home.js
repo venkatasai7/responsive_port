@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Logo from './Logo';
 import Description from './Description';
 import Timeline from './Timeline';
@@ -7,26 +7,8 @@ import WordCloud from './WordCloud';
 import Experience from './Experience';
 import Footer from './Footer';
 import Text from './Text';
-import Spinner from './Spinner'; // Import the Spinner component
 
 const Home = () => {
-
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 1000); 
-
-    return () => clearTimeout(timer); 
-  }, []);
-
-  if (isLoading) {
-    return <Spinner />; 
-  }
-
-
-
 
   return (
     <div style={{ backgroundColor: '#dfdfdf' }}>

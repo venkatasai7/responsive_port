@@ -1,18 +1,15 @@
-/* NavBar.css */
 .nav {
-    /* Fixed positioning to stay at the top */
     width: 100%;
-    min-height: 11%;
+    min-height: 50px; 
+    height: 10vh; 
     position: fixed;
-    /* background-color: rgba(0, 0, 0, 0) !important; */
-    /* background-color: #6867AC !important; */
-
-    z-index: 999; /* Lower z-index than logo */
+    z-index: 999;
 }
 
 .nav-container {
     width: 100%;
-    min-height: 11%;
+    min-height: 50px; 
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,40 +18,33 @@
 .nav-left, .nav-right {
     display: flex;
     align-items: center;
-    flex-wrap: nowrap; /* Prevent wrapping on larger screens */
+    flex-wrap: nowrap;
 }
 
 .nav-item {
-    text-decoration:solid;
+    text-decoration: solid;
     text-transform: uppercase;
     color: #fff;
-    padding: 0 1em; /* Adjust padding for better spacing */
+    padding: 25px;
     font-weight: 700;
     font-size: 15px;
-    /* text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);  */
     display: flex;
     align-items: center;
 }
 
-/* Ensure the dropdown aligns properly with other items */
 .nav-dropdown .dropdown-menu {
-    /* background-color: black ; Match the background color */
-    border: none; /* Remove default border */
-    box-shadow: none; /* Remove default shadow */
-    /* text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);  */
+    border: none;
+    box-shadow: none;
 }
 
 .nav-dropdown .dropdown-toggle::after {
-    display: none; /* Hide the default dropdown arrow */
-    /* text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);  */
+    display: none;
 }
 
-/* Media query for medium and smaller screens */
-@media (max-width: 992px) { /* Target medium and smaller screens */
+@media (max-width: 992px) {
     .nav-container {
-        min-height: 11%;
-        flex-direction: column; /* Stacks the nav items vertically */
-        align-items: center; /* Center the items */
+        flex-direction: column;
+        align-items: center;
     }
 
     .nav-left, .nav-right {
@@ -64,13 +54,13 @@
     }
 
     .nav-item {
-        padding: 1em 0; 
+        padding: 1em 0;
         width: 100%;
         text-align: center;
     }
 
     .nav-dropdown .dropdown-menu {
-        width: 100%; /* Ensure the dropdown menu takes full width */
-        text-align: center; /* Center the dropdown items */
+        width: 100%;
+        text-align: center;
     }
 }

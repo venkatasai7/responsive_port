@@ -13,7 +13,7 @@ const Logo = () => {
         end: "top center",
         scrub: true,
         onUpdate: (self) => {
-          if (self.progress > 0.9) {
+          if (self.progress > 0.5) {
             setShowAlternateText(true);
           } else {
             setShowAlternateText(false);

@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-scroll';
-import '../Styles/NavBar.css'; // Import your custom CSS
+import '../Styles/NavBar.css'; 
 
 const NavBar = () => {
   const [expanded, setExpanded] = useState(false);
 
-  // Define an offset to center the section in the viewport
-  const offset = -window.innerHeight / 2 + 50; // Adjust the +50 value as needed to account for the navbar height
+  const offset = -window.innerHeight / 2 + 50; 
 
   return (
     <>
@@ -29,7 +28,7 @@ const NavBar = () => {
               </Nav.Link>
             </div>
             <div className="nav-right">
-              <Nav.Link className="nav-item mx-2" href="/" onClick={() => setExpanded(false)}>Contact me</Nav.Link>
+              <Nav.Link className="nav-item mx-2" href="/" onClick={() => setExpanded(false)}>Contact</Nav.Link>
               <NavDropdown className="nav-item" title="Contents" id="basic-nav-dropdown">
                 <NavDropdown.Item>
                   <Link 
