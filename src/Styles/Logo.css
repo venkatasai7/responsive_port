@@ -50,6 +50,6 @@
 @media (max-width: 768px) { 
     .logo {
         font-size: calc(1.5vw + 1em); 
-        padding-top: calc(2vh + 0.5em); 
+        padding-top: calc(2vh + 0em); 
     }
 }
