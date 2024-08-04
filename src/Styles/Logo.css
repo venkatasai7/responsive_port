@@ -44,6 +44,7 @@
     .logo {
         font-size: calc(2vw + 1em); 
         padding-top: calc(1.5vh + 0.5em); 
+        transform: translateX(-50%);
     }
 }
 
@@ -51,5 +52,6 @@
     .logo {
         font-size: calc(1.5vw + 1em); 
         padding-top: calc(2vh + 0em); 
+        transform: translateX(-50%);
     }
 }
