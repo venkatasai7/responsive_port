@@ -10,18 +10,17 @@ const Experience = () => {
   const handleViewDetails = () => {
     navigate('/paper-publications');
   };
+  
   return (
     <>
-
       <div className="experience-container">
         <div className="container my-3">
-      <button className="btn btn-dark" onClick={handleViewDetails}>
-          View in Detail
-        </button>
-      </div>
+          <button className="btn btn-dark" onClick={handleViewDetails}>
+            View in Detail
+          </button>
+        </div>
 
         <div className="experience-content">
-
           <div className="maincontainer">
             <div className="thecard">
               <div className="thefront" style={{ backgroundImage: `url(${jetir})` }}>
@@ -45,7 +44,7 @@ const Experience = () => {
                 <p>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus veritatis aspernatur eius beatae, tempora totam velit non nulla quis officiis culpa aliquam laudantium commodi reprehenderit nihil illum laboriosam impedit! Praesentium.
                 </p>
-                  <a href="https://www.ijrar.org/papers/IJRAR22C1807.pdf" className="btn btn-primary" target="_blank" rel="noopener noreferrer">View Paper</a>
+                <a href="https://www.ijrar.org/papers/IJRAR22C1807.pdf" className="btn btn-primary" target="_blank" rel="noopener noreferrer">View Paper</a>
               </div>
             </div>
           </div>

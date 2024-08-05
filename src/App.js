@@ -8,7 +8,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './App.css';
 import PaperPublications from './Components/PaperPublications';
 import AllProjects from './Components/AllProjects';
-
+import Contact from './Components/Contact';
 function App() {
   return (
     <Router>
@@ -20,6 +20,8 @@ function App() {
           <Route path="/paper-publications" element={<PaperPublications />} />
           <Route path="/projects" element={<AllProjects />} />
           <Route path="/projects/:id" element={<AllProjects />} />
+          <Route path="/Contact" element={<Contact />} />
+
         </Routes>
       </div>
     </Router>

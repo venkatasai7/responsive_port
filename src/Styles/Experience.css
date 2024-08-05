@@ -16,13 +16,13 @@
 
 .maincontainer {
   perspective: 1000px;
-  width: 60vw; /* Increased width */
+  width: 45%; /* Adjusted width for fitting side by side */
   height: 50vh;
-  max-width: 700px; /* Increased max-width */
+  max-width: 700px;
   max-height: 500px;
-  display: flex; /* Added flex display */
-  justify-content: center; /* Centered the content */
-  align-items: center; /* Centered the content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .thecard {
@@ -53,7 +53,7 @@
 }
 
 .thefront {
-  background-size: contain; /* Ensure the whole image is visible */
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-color: rgb(255, 255, 255);
@@ -64,8 +64,25 @@
   transform: rotateY(180deg);
 }
 
+@media (min-width: 1200px) {
+  .experience-content {
+    flex-direction: row; /* Ensure side by side on large screens */
+  }
 
+  .maincontainer {
+    width: 45%; /* Adjusted width for fitting side by side */
+  }
+}
 
+@media (max-width: 1199px) and (min-width: 768px) {
+  .experience-content {
+    flex-direction: row; /* Ensure side by side on medium screens */
+  }
+
+  .maincontainer {
+    width: 45%; /* Adjusted width for fitting side by side */
+  }
+}
 
 @media (max-width: 768px) {
   .experience-content {

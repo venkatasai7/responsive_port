@@ -1,57 +1,57 @@
-
 .logocontainer {
     width: 100%;
-    height: 100vh; 
-    background-image: url("../images/logo/vizag2.png");
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-attachment: scroll; 
-    overflow: hidden; 
-}
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    overflow: hidden;
 
-@media (max-width: 768px) { /* For screens smaller than 768px */
+  }
+  
+  @media (max-width: 768px) {
     .logocontainer {
-        background-position: center; /* Center the image for better focus on smaller screens */
-        background-size: cover;
+      background-position: center;
+      background-size: cover;
     }
-}
-
-@media (min-width: 1200px) { /* For larger screens (e.g., desktop monitors) */
+  }
+  
+  @media (min-width: 1200px) {
     .logocontainer {
-        background-position: right center; /* Align the image towards the right side */
-        background-size: cover;
+      background-position: right center;
+      background-size: cover;
     }
-}
-
-.logo {
-    position: fixed; 
+  }
+  
+  .logo {
+    position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     font-size: calc(1vw + 1em);
     padding-top: calc(0vh + 1em);
     color: white;
-    z-index: 1000; 
-    line-height: 1.2; /* Ensures consistent line height */
+    z-index: 1000;
+    line-height: 1.2;
     text-shadow:
-        1px 1px 2px black,
-        0 0 1em black,
-        0 0 0.2em black; 
-}
-
-@media (max-width: 992px) { 
+      1px 1px 2px black,
+      0 0 1em black,
+      0 0 0.2em black;
+  }
+  
+  @media (max-width: 992px) {
     .logo {
-        font-size: calc(2vw + 1em); 
-        padding-top: calc(1.5vh + 0.5em); 
-        transform: translateX(-50%);
+      font-size: calc(2vw + 1em);
+      padding-top: calc(1.5vh + 0.5em);
+      transform: translateX(-50%);
     }
-}
-
-@media (max-width: 768px) { 
+  }
+  
+  @media (max-width: 768px) {
     .logo {
-        font-size: calc(1.5vw + 1em); 
-        padding-top: calc(2vh + 0em); 
-        transform: translateX(-50%);
+      font-size: calc(1.5vw + 1em);
+      padding-top: calc(2vh + 0em);
+      transform: translateX(-50%);
     }
-}
+  }
+  

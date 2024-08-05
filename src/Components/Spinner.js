@@ -1,4 +1,3 @@
-// Spinner.js
 import React from 'react';
 import spinner from '../images/pacman.gif'; // Make sure the path is correct
 import '../Styles/Spinner.css'; // Add styles for the spinner

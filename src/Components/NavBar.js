@@ -2,12 +2,17 @@ import React, { useState } from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import '../Styles/NavBar.css'; 
+import { useNavigate } from 'react-router-dom';
 
 const NavBar = () => {
   const [expanded, setExpanded] = useState(false);
 
   const offset = -window.innerHeight / 2 + 50; 
+  const navigate = useNavigate();
 
+  const handleViewDetails = () => {
+    navigate('/Contact');
+  };
   return (
     <>
       <Navbar bg="black" variant="dark" fixed="top" expand="lg" className="nav" 
@@ -28,7 +33,7 @@ const NavBar = () => {
               </Nav.Link>
             </div>
             <div className="nav-right">
-              <Nav.Link className="nav-item mx-2" href="/" onClick={() => setExpanded(false)}>Contact</Nav.Link>
+              <Nav.Link className="nav-item mx-2"  onClick={handleViewDetails}>Contact</Nav.Link>
               <NavDropdown className="nav-item" title="Contents" id="basic-nav-dropdown">
                 <NavDropdown.Item>
                   <Link 
