@@ -4,6 +4,11 @@ import '../Styles/Contact.css';
 import linkedn_in from '../images/organizations/LinkedIn_logo.png';
 import Github from '../images/organizations/Github.webp';
 import Leetcode from '../images/organizations/Leetcode.png';
+import gfg from '../images/organizations/gfg.png';
+import HackeRank from '../images/organizations/HackerRank.png';
+import hackerearth from '../images/organizations/hackerearth.webp'
+import credly from '../images/organizations/credly.png'
+
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
@@ -31,33 +36,27 @@ const cardData = [
     },
     {
         id: 4,
-        title: "Card 4",
-        image: linkedn_in,
-        redirectlink: "This is the fourth card."
+        title: "GeeksForGeeks",
+        image: gfg,
+        redirectlink: "https://www.geeksforgeeks.org/user/venkatasai25/"
     },
     {
         id: 5,
-        title: "Card 5",
-        image: linkedn_in,
-        redirectlink: "This is the fifth card."
+        title: "HackerRank",
+        image: HackeRank,
+        redirectlink: "https://www.hackerrank.com/profile/IT_318126511134"
     },
     {
         id: 6,
-        title: "Card 6",
-        image: linkedn_in,
-        redirectlink: "This is the sixth card."
+        title: "HackerEarth",
+        image: hackerearth,
+        redirectlink: "https://www.hackerearth.com/@venkatsai.7"
     },
     {
         id: 7,
-        title: "Card 7",
-        image: linkedn_in,
-        redirectlink: "This is the seventh card."
-    },
-    {
-        id: 8,
-        title: "Card 8",
-        image: linkedn_in,
-        redirectlink: "This is the eighth card."
+        title: "Credly",
+        image: credly,
+        redirectlink: "https://www.credly.com/users/venkata-sai-kuniganiti"
     }
 ];
 
@@ -83,13 +82,13 @@ const Contact = () => {
 </div>
 
 
-            <div className="container">
-                <div className="card-container">
+            <div className="contactcontainer">
+                <div className="contactcard-contactcontainer">
                     {cardData.map(card => (
-                        <div key={card.id} className="card">
-                            <img src={card.image} className="card-img-top" alt={card.title} />
-                            <div className="card-body">
-                                <p className="card-title">{card.title}</p>
+                        <div key={card.id} className="contactcard">
+                            <img src={card.image} className="contactcard-img-top" alt={card.title} />
+                            <div className="contactcard-body">
+                                <p className="contactcard-title">{card.title}</p>
                                 <a href={card.redirectlink} className="btn btn-primary"
                                     target="_blank" rel="noopener noreferrer"
                                 >view</a>

@@ -30,20 +30,20 @@
 }
 
 
-.container {
+.contactcontainer {
     margin: 0 auto;
     max-width: 1200px; /* Adjust as needed */
     padding: 0 15px;
   }
   
-  .card-container {
+  .contactcard-contactcontainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
     margin-top: 2rem;
   }
   
-  .card {
+  .contactcard {
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
@@ -51,19 +51,19 @@
     transition: transform 0.3s ease;
   }
   
-  .card-img-top {
+  .contactcard-img-top {
     width: 100%;
     height: auto;
   }
   
-  .card-body {
+  .contactcard-body {
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   
-  .card-title {
+  .contactcard-title {
     margin: 0;
   }
   
@@ -77,7 +77,7 @@
     flex-shrink: 0; /* Prevent button from shrinking */
   }
   
-  .card:hover {
-    transform: scale(1.05);
+  .contactcard:hover {
+    transform: scale(1.07);
   }
   

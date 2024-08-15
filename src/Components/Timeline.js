@@ -16,7 +16,7 @@ const events = [
     subtitle: 'University of Alabama at Birmingham',
     location: 'Birmingham, USA',
     description: 'Dive deep into aspects of computer science including algorithms, Machine Learning, and Deep learning.',
-    tags: ['Machine Learning', 'Advanced Algorithms', 'Deep Learnings'],
+    tags: ['ML', 'Advanced Algorithms', 'DL'],
     buttonText: 'View Details',
     id: 'uabms'
   },
@@ -27,7 +27,7 @@ const events = [
     subtitle: 'Tata Consultancy Services',
     location: 'Hyderabad, IND',
     description: 'Developing and maintaining web applications using React and Node.js.',
-    tags: ['SQL Server', 'ADF', 'Python'],
+    tags: ['SQL', 'ADF', 'Python'],
     buttonText: 'View Details',
     id: 'tcs'
   },
@@ -45,7 +45,7 @@ const events = [
   {
     type: 'education',
     date: '2018 - 2022',
-    title: 'Bachelor of Science in Computer Science',
+    title: 'Bachelor of Tech. in Information Technology',
     subtitle: 'Anil Neerukonda Institute of Technology and Sciences',
     location: 'Visakhapatnam, IND',
     description: 'Studied various aspects of computer science including algorithms, data structures, and software engineering.',

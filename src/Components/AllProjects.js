@@ -91,7 +91,7 @@ const AllProjects = () => {
   }, {});
 
   return (
-    <div>
+    <div style={{ backgroundColor:'whitesmoke' }}>
       <NavBar />
       <p className="NavLogo">Venkata Sai Kuniganti</p>
       <br /><br /><br /><br />
