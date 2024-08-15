@@ -44,9 +44,9 @@ const Home = () => {
           </div>
           
           <div id="experiences">
-            <Text 
+            {/* <Text 
               text='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad repellat ipsum, cum repellendus unde illo dicta vitae eaque aut delectus dolore nulla. Illum aspernatur dolorem, reiciendis dolores enim totam itaque.'
-            />
+            /> */}
             <Timeline /> {/* Experiences */}
           </div>
 

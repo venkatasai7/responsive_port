@@ -11,7 +11,7 @@ const Certifications = () => {
   const navigate = useNavigate();
 
   const handleViewDetails = (id) => {
-    navigate(`/education-experience/${id}`);
+    navigate(`/`);
   };
 
   return (
@@ -20,7 +20,7 @@ const Certifications = () => {
 
       {/* Card 1 */}
       <a href="https://www.credly.com/badges/7f612e6c-d356-4f50-bf27-749148e50850/public_url" target="_blank" rel="noopener noreferrer" style={cardLinkStyle}>
-        <div className="card">
+        <div className="certcard">
           <img src={cimg1} alt="AWS logo" style={logoStyle} />
           <div style={textContainerStyle}>
             <p style={titleStyle}>Machine Learning</p>
@@ -31,7 +31,7 @@ const Certifications = () => {
 
       {/* Card 2 */}
       <a href="https://www.credly.com/badges/7f612e6c-d356-4f50-bf27-749148e50850/public_url" target="_blank" rel="noopener noreferrer" style={cardLinkStyle}>
-        <div className="card">
+        <div className="certcard">
           <img src={cimg2} alt="HackerRank logo" style={logoStyle} />
           <div style={textContainerStyle}>
             <p style={titleStyle}>Intro to Python</p>
@@ -42,7 +42,7 @@ const Certifications = () => {
 
       {/* Card 3 */}
       <a href="https://www.credly.com/badges/7f612e6c-d356-4f50-bf27-749148e50850/public_url" target="_blank" rel="noopener noreferrer" style={cardLinkStyle}>
-        <div className="card">
+        <div className="certcard">
           <img src={cimg3} alt="Infosys logo" style={logoStyle} />
           <div style={textContainerStyle}>
             <p style={titleStyle}>An Introduction to Programming the Internet of Things (IOT)</p>
@@ -51,7 +51,7 @@ const Certifications = () => {
         </div>
       </a>
 
-      <button className="btn btn-dark" onClick={() => navigate('/')}>
+      <button className="btn btn-dark" onClick={() => handleViewDetails()}>
         View in Detail
       </button>
     </>
