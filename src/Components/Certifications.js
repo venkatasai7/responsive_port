@@ -88,5 +88,3 @@ const descriptionStyle = {
 };
 
 export default Certifications;
-
-

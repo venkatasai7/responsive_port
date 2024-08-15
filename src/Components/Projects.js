@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 const cards = [
   {
     id: 'project1',
-    imageUrl: "../images/01.jpg",
+    imageUrl: "../images/image.png",
     title: 'ML/DL projects',
     buttonText: 'View Details',
     buttonLink: '/projects/project1'
@@ -25,7 +25,6 @@ const cards = [
     buttonText: 'View Details',
     buttonLink: '/projects/project3'
   }
-  // Add more cards as needed
 ];
 
 const Projects = () => {

@@ -59,6 +59,9 @@
   .card-subtitle {
     font-size: 1.2rem;
   }
+  .card-text {
+    font-size: 1.1rem;
+  }
   
   @media (max-width: 768px) {
     .card-title {

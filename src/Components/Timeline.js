@@ -16,7 +16,7 @@ const events = [
     subtitle: 'University of Alabama at Birmingham',
     location: 'Birmingham, USA',
     description: 'Dive deep into aspects of computer science including algorithms, Machine Learning, and Deep learning.',
-    tags: ['ML', 'Advanced Algorithms', 'DL'],
+    tags: ['ML', 'Adv. Algo.','Cloud','SQL'],
     buttonText: 'View Details',
     id: 'uabms'
   },
@@ -27,18 +27,18 @@ const events = [
     subtitle: 'Tata Consultancy Services',
     location: 'Hyderabad, IND',
     description: 'Developing and maintaining web applications using React and Node.js.',
-    tags: ['SQL', 'ADF', 'Python'],
+    tags: ['SQL','Python','ADF',],
     buttonText: 'View Details',
     id: 'tcs'
   },
   {
     type: 'work',
     date: '2021 - 2022',
-    title: 'Software Developer Engineer',
+    title: 'Software Developement Engineer',
     subtitle: 'Axiom io',
     location: 'Secundrabad, IND',
     description: 'Worked on various web development projects using JavaScript and Python.',
-    tags: ['JavaScript', 'Python', 'Development'],
+    tags: ['JS','front end','.NET'],
     buttonText: 'View Details',
     id: 'axiom'
   },

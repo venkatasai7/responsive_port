@@ -5,8 +5,9 @@ const Description = () => {
     <div className="container">
     <div className='descriptioncontent'>      
       <h2>
-      I am actively seeking impactful opportunities. With a robust foundation as a software developer at TCS and prior experience as a software intern at Axiom IO, I bring a unique blend of academic knowledge and practical expertise to the table. Proficient in coding, problem-solving, and collaborating on innovative solutions, I am eager to contribute my skills to a dynamic team. Let's connect and explore how my background can add value to your organization.
-       </h2>
+      I'm a Computer Science grad student with experience as a Systems Engineer at TCS and a software intern at AxiomIO. Skilled in Python, SQL, ML, and cloud computing, I enjoy solving complex problems and am certified in AWS and Azure. Outside of tech, I love movies and TV shows.
+
+   </h2>
        </div>
     </div>
   )

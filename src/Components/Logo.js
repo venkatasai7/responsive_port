@@ -54,7 +54,7 @@ const Logo = () => {
           {showAlternateText ? (
             <>Venkata Sai Kuniganti</>
           ) : (
-            <>Hola ! I am Venkata Sai Kuniganti .</>
+            <>Hi ! I am Venkata Sai Kuniganti .</>
           )}
         </p>
       </div>

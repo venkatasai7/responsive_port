@@ -51,9 +51,9 @@ const Home = () => {
           </div>
 
           <div id="projects">
-            <Text 
-              text='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad repellat ipsum, cum repellendus unde illo dicta vitae eaque aut delectus dolore nulla. Illum aspernatur dolorem, reiciendis dolores enim totam itaque.'
-            />
+            {/* <Text 
+              text='To test and apply my skills in the real world, I’ve worked on several projects.'
+            /> */}
             <Projects /> {/* Projects */}
           </div>
 
