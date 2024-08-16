@@ -28,30 +28,30 @@ const Certifications = () => {
         <div className="certcard">
           <img src={cimg1} alt="AWS logo" style={logoStyle} />
           <div style={textContainerStyle}>
-            <p style={titleStyle}>Machine Learning</p>
-            <p style={descriptionStyle}>Machine Learning Foundations</p>
+            <p style={titleStyle}>Cloud Practitioner</p>
+            <p style={descriptionStyle}>Amazon Web Services (AWS) </p>
           </div>
         </div>
       </a>
 
       {/* Card 2 */}
-      <a href="https://www.credly.com/badges/7f612e6c-d356-4f50-bf27-749148e50850/public_url" target="_blank" rel="noopener noreferrer" style={cardLinkStyle}>
+      <a href="https://www.hackerrank.com/certificates/56968eb4365c" target="_blank" rel="noopener noreferrer" style={cardLinkStyle}>
         <div className="certcard">
           <img src={cimg2} alt="HackerRank logo" style={logoStyle} />
           <div style={textContainerStyle}>
-            <p style={titleStyle}>Intro to Python</p>
-            <p style={descriptionStyle}>Yassin Marco</p>
+            <p style={titleStyle}>Python</p>
+            <p style={descriptionStyle}>Hackkerank</p>
           </div>
         </div>
       </a>
 
       {/* Card 3 */}
-      <a href="https://www.credly.com/badges/7f612e6c-d356-4f50-bf27-749148e50850/public_url" target="_blank" rel="noopener noreferrer" style={cardLinkStyle}>
+      <a href="https://drive.google.com/file/d/17tzrhWqVHVx5CN8sFUv07yHMmPqZJLLf/view?usp=drive_link" target="_blank" rel="noopener noreferrer" style={cardLinkStyle}>
         <div className="certcard">
           <img src={cimg3} alt="Infosys logo" style={logoStyle} />
           <div style={textContainerStyle}>
-            <p style={titleStyle}>An Introduction to Programming the Internet of Things (IOT)</p>
-            <p style={descriptionStyle}>Ian Harris</p>
+            <p style={titleStyle}>Certified Software Programmer</p>
+            <p style={descriptionStyle}>Infosys</p>
           </div>
         </div>
       </a>
