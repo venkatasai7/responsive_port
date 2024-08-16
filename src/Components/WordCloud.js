@@ -28,9 +28,9 @@ const WordCloud = () => {
   return (
     <>
       <div className="container my-3">
-        {/* <button className="btn btn-dark" href="/">
-          View All Skills
-        </button> */}
+      <div className="container my-3 d-flex justify-content-between align-items-center">
+  <h1>Skills</h1>
+</div>
       </div>
       <div className="word-cloud" ref={cloudRef}>
         {Skills.map((tech, index) => (

@@ -12,18 +12,18 @@ const cards = [
     buttonLink: '/projects/project1'
   },
   {
-    id: 'project2',
-    imageUrl: "../images/03.jpg",
-    title: 'React Projects',
-    buttonText: 'View Details',
-    buttonLink: '/projects/project2'
-  },
-  {
     id: 'project3',
-    imageUrl: "../images/04.jpg",
+    imageUrl: "../images/python.png",
     title: 'Python Projects',
     buttonText: 'View Details',
     buttonLink: '/projects/project3'
+  },
+  {
+    id: 'project2',
+    imageUrl: "../images/react.png",
+    title: 'React Projects',
+    buttonText: 'View Details',
+    buttonLink: '/projects/project2'
   }
 ];
 
@@ -36,18 +36,23 @@ const Projects = () => {
 
   return (
     <div className="my-3">
-      <div className="container my-3">
-        <button className="btn btn-dark" onClick={() => navigate('/projects')}>
-          View All Projects
-        </button>
-      </div>
+
+      <div className="container my-3 d-flex justify-content-between align-items-center">
+  <h1>Projects</h1>
+  <button className="btn btn-dark" onClick={() => navigate('/projects')}>
+    View in Detail
+  </button>
+</div>
+
       <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
           {cards.map((card, index) => (
             <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={card.id}>
               <img src={card.imageUrl} className="d-block w-100" alt={card.title} />
               <div className="carousel-caption d-block">
-                <h5>{card.title}</h5>
+              <h5 style={{ textShadow: '2px 2px 4px black, 0 0 2em black, 0 0 0.5em black'}}>
+               {card.title}
+              </h5>
                 <button className="btn btn-primary" onClick={() => handleViewDetails(card.buttonLink)}>
                   {card.buttonText}
                 </button>

@@ -16,7 +16,12 @@ const Certifications = () => {
 
   return (
     <>
-      <h1 style={{ textAlign: 'left', margin: '20px' }}>Certifications/Achievements</h1>
+      <div className="container my-3 d-flex justify-content-between align-items-center">
+  <h1>Certificates</h1>
+  <button className="btn btn-dark" onClick={handleViewDetails}>
+    View in Detail
+  </button>
+</div>
 
       {/* Card 1 */}
       <a href="https://www.credly.com/badges/7f612e6c-d356-4f50-bf27-749148e50850/public_url" target="_blank" rel="noopener noreferrer" style={cardLinkStyle}>
@@ -51,9 +56,7 @@ const Certifications = () => {
         </div>
       </a>
 
-      <button className="btn btn-dark" onClick={() => handleViewDetails()}>
-        View in Detail
-      </button>
+
     </>
   );
 };

@@ -65,10 +65,11 @@ const Timeline = () => {
 
   return (
     <div className="container">
-      <div className="container my-3">
-        {/* <button className="btn btn-dark" onClick={() => navigate('/education-experience')}>
+      <div className="container my-3 d-flex justify-content-between align-items-center">
+            <h1>Education/Experince</h1>
+         <button className="btn btn-dark" onClick={() => navigate('/education-experience')}>
           View in Detail
-        </button> */}
+        </button> 
       </div>
       <VerticalTimeline lineColor="#9a9a9a">
         {events.map((event, index) => (

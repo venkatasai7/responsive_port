@@ -58,15 +58,15 @@ const Home = () => {
           </div>
 
           <div id="publications">
-            <Text 
-              text='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad repellat ipsum, cum repellendus unde illo dicta vitae eaque aut delectus dolore nulla. Illum aspernatur dolorem, reiciendis dolores enim totam itaque.'
-            />
+            {/* <Text 
+              text='Published 2 '
+            /> */}
             <Experience /> {/* Publications */}
           </div>
 
           <div id="skills">
             <Text 
-              text='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad repellat ipsum, cum repellendus unde illo dicta vitae eaque aut delectus dolore nulla. Illum aspernatur dolorem, reiciendis dolores enim totam itaque.'
+              // text='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad repellat ipsum, cum repellendus unde illo dicta vitae eaque aut delectus dolore nulla. Illum aspernatur dolorem, reiciendis dolores enim totam itaque.'
             />
             <div className="container">
             <WordCloud />
