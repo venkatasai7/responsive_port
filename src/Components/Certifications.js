@@ -11,7 +11,7 @@ const Certifications = () => {
   const navigate = useNavigate();
 
   const handleViewDetails = (id) => {
-    navigate(`/`);
+    navigate(`/certificates`);
   };
 
   return (

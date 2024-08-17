@@ -9,6 +9,9 @@ import './App.css';
 import PaperPublications from './Components/PaperPublications';
 import AllProjects from './Components/AllProjects';
 import Contact from './Components/Contact';
+import AllCertificates from './Components/AllCertificates';
+
+
 function App() {
   return (
     <Router>
@@ -21,6 +24,7 @@ function App() {
           <Route path="/projects" element={<AllProjects />} />
           <Route path="/projects/:id" element={<AllProjects />} />
           <Route path="/Contact" element={<Contact />} />
+          <Route path="/Certificates" element={<AllCertificates />} />
 
         </Routes>
       </div>
