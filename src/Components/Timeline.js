@@ -66,7 +66,7 @@ const Timeline = () => {
   return (
     <div className="container">
       <div className="container my-3 d-flex justify-content-between align-items-center">
-            <h1>Education/Experince</h1>
+            <h1>Edu/Exp</h1>
          <button className="btn btn-dark" onClick={() => navigate('/education-experience')}>
           View in Detail
         </button> 
