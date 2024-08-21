@@ -32,6 +32,14 @@ const projects = [
   category: 'ML/DL Projects'
 },
 {
+  id: 'project 14',
+  title: 'Google maps integrated Fuel Estimator',
+  description: 'Calcualtes the estimate for the fuel cost for the given vehicle mileage and locations',
+  link: 'https://github.com/venkatasai7/FuelEstimate',
+  technologies: ['React','Google API'],
+  category: 'React Projects'
+},
+{
   id: 'project 5 ',
   title: 'Responsive Portfolio ',
   description: 'responsive size robust smooth portfolio page (this website)',
@@ -110,7 +118,8 @@ const projects = [
   link: '#',
   technologies: ['Flask','Python'],
   category: 'Python Projects'
-}
+},
+
 ];
 
 export default projects;

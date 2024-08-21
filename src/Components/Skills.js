@@ -25,6 +25,7 @@ import HighchartsJSLogo from '../images/tech_logos/highschartsJs.png';
 import MongoDBLogo from '../images/tech_logos/mongodb.svg';
 import OpenCVLogo from '../images/tech_logos/openCV.png';
 import PostmanLogo from '../images/tech_logos/postman.svg';
+import GoogleAPI from '../images/tech_logos/googleapi.png';
 
 const Skills = [
   { name: 'Python', logo: PythonLogo, color: '#3776AB' },
@@ -55,6 +56,7 @@ const Skills = [
   { name: 'OpenCV', logo: OpenCVLogo, color: '#5C3EE8' },
   { name: 'Postman', logo: PostmanLogo, color: '#FF6C37' },
   { name: 'GitHub', logo: GitHubLogo, color: '#181717' },
+  { name: 'Google API', logo: GoogleAPI, color: '#47A248' }
 ];
 
 export default Skills;
