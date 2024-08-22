@@ -34,7 +34,7 @@ const NavBar = () => {
          bg={"black"} 
         variant={"dark"}
         fixed="top" expand="lg" className="nav"
-        style={{ position: 'fixed', zIndex: '999' }} expanded={expanded}
+        style={{ position: 'fixed', zIndex: '998' }} expanded={expanded}
       >
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(expanded ? false : true)} />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -43,7 +43,7 @@ const NavBar = () => {
               <Nav.Link className="nav-item mx-2" href="/" onClick={() => setExpanded(false)}>Home</Nav.Link>
               <Nav.Link
                 className="nav-item mx-2"
-                href="https://drive.google.com/file/d/1JENblTU-rsPR25PwC-00MQfKU1hb9JX-/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1uIydknPzUDDImbZlDlafaePxXiXLN8gK/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setExpanded(false)}
