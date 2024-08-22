@@ -1,14 +1,7 @@
 const projects = [
+
   {
     id: 'project1',
-    title: 'CIFAR-10',
-    description: ' implementations of various machine learning models using Python and popular libraries like NumPy, TensorFlow, and Scikit-learn.',
-    link: 'https://github.com/venkatasai7/CIFAR-10',
-    technologies: ['TensorFlow', 'Python', 'Jupyter Notebook'],
-    category: 'ML/DL Projects'
-  },
-  {
-    id: 'project3',
     title: 'Lost & Found Full stack using Django',
     description: 'using Django devloped a full stack application add , update, delete users and posts, where a user can upload an image of a lost item as a post.',
     link: 'https://github.com/venkatasai7/Lost-Found',
@@ -16,7 +9,7 @@ const projects = [
     category: 'Python Projects'
   },
   {
-    id: 'project2',
+    id: 'project4',
     title: 'Hand Cricket game',
     description: 'Develpoed a game that recognizes the hand symbols and replcates it with handcricet game',
     link: 'https://github.com/venkatasai7/HandRecognition',
@@ -24,7 +17,7 @@ const projects = [
     category: 'Python Projects'
   },
 
-  {id: 'project4',
+  {id: 'project2',
   title: "Breast Cancer Prediction using Newton's method",
   description: ' aim of this project is to predict whether a breast tumor is malignant (M) or benign (B) based on various features extracted from digitized images of breast cancer biopsies.',
   link: 'https://github.com/venkatasai7/BreastCancerPrediction-using-Newton-s-method',
@@ -32,7 +25,7 @@ const projects = [
   category: 'ML/DL Projects'
 },
 {
-  id: 'project 14',
+  id: 'project3',
   title: 'Google maps integrated Fuel Estimator',
   description: 'Calcualtes the estimate for the fuel cost for the given vehicle mileage and locations',
   link: 'https://github.com/venkatasai7/FuelEstimate',
@@ -40,7 +33,15 @@ const projects = [
   category: 'React Projects'
 },
 {
-  id: 'project 5 ',
+  id: 'project14',
+  title: 'CIFAR-10',
+  description: ' implementations of various machine learning models using Python and popular libraries like NumPy, TensorFlow, and Scikit-learn.',
+  link: 'https://github.com/venkatasai7/CIFAR-10',
+  technologies: ['TensorFlow', 'Python', 'Jupyter Notebook'],
+  category: 'ML/DL Projects'
+},
+{
+  id: 'project5 ',
   title: 'Responsive Portfolio ',
   description: 'responsive size robust smooth portfolio page (this website)',
   link: 'https://github.com/venkatasai7/responsive_port',

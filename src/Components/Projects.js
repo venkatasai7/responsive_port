@@ -5,26 +5,26 @@ import { useNavigate } from 'react-router-dom';
 
 const cards = [
   {
+    id: 'project2',
+    imageUrl: "../images/python.png",
+    title: 'Python Projects',
+    buttonText: 'View Details',
+    buttonLink: '/projects/project1'
+  },
+   {
     id: 'project1',
     imageUrl: "../images/image.png",
     title: 'ML/DL projects',
     buttonText: 'View Details',
-    buttonLink: '/projects/project1'
+    buttonLink: '/projects/project2'
   },
   {
     id: 'project3',
-    imageUrl: "../images/python.png",
-    title: 'Python Projects',
-    buttonText: 'View Details',
-    buttonLink: '/projects/project3'
-  },
-  {
-    id: 'project2',
     imageUrl: "../images/react.png",
     title: 'React Projects',
     buttonText: 'View Details',
-    buttonLink: '/projects/project2'
-  }
+    buttonLink: '/projects/project3'
+  },
 ];
 
 const Projects = () => {
