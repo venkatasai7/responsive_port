@@ -13,6 +13,7 @@ const NavBar = () => {
 
   const handleViewDetails = () => {
     navigate('/Contact');
+    window.scrollTo(0, 0);
   };
 
   const handleNavItemClick = (path, target) => {
