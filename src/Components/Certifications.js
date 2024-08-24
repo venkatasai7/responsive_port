@@ -12,6 +12,7 @@ const Certifications = () => {
 
   const handleViewDetails = (id) => {
     navigate(`/certificates`);
+    window.scrollTo(0, 0);
   };
 
   return (
