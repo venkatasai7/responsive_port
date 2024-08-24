@@ -64,6 +64,8 @@ const Home = () => {
             <Experience /> {/* Publications */}
           </div>
 
+
+
           <div id="skills">
             <Text 
               // text='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad repellat ipsum, cum repellendus unde illo dicta vitae eaque aut delectus dolore nulla. Illum aspernatur dolorem, reiciendis dolores enim totam itaque.'
@@ -76,7 +78,7 @@ const Home = () => {
 
           <div className="container">
             <Certifications/>
-            <div className="container"><br /></div>
+            <br/><br/><br/><br/>
           </div>
 
           <Footer />

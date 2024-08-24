@@ -81,9 +81,9 @@ const AllCertificates = () => {
     },
     {
       title: 'AWS-Partner',
-      text: 'Technical Accredited',
+      text: 'Accreditation (Business)',
       image: credly,
-      link: 'https://www.credly.com/earner/earned/badge/2f466915-a422-43c8-a3a5-662ba2f7352c',
+      link: 'https://www.credly.com/badges/56edc5b4-07f0-44da-b984-f3438a19bdc7',
     },
   ];
 

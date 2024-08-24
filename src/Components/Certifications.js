@@ -17,7 +17,7 @@ const Certifications = () => {
 
   return (
     <>
-      <div className="container my-3 d-flex justify-content-between align-items-center">
+      <div className="container d-flex justify-content-between align-items-center">
   <h1>Certificates</h1>
   <button className="btn btn-dark" onClick={handleViewDetails}>
     View in Detail

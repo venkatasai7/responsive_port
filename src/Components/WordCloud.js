@@ -1,21 +1,24 @@
-import Skills from './Skills';
-import React, { useEffect, useRef } from 'react';
-import '../Styles/WordCloud.css';
+import Skills from "./Skills";
+import React, { useEffect, useRef } from "react";
+import "../Styles/WordCloud.css";
 
 const WordCloud = () => {
   const cloudRef = useRef(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.5 });
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
 
-    const logos = cloudRef.current.querySelectorAll('.techlogo');
+    const logos = cloudRef.current.querySelectorAll(".techlogo");
     logos.forEach((logo) => {
       observer.observe(logo);
     });
@@ -27,10 +30,10 @@ const WordCloud = () => {
 
   return (
     <>
-      <div className="container my-3">
-      <div className="container my-3 d-flex justify-content-between align-items-center">
-  <h1>Skills</h1>
-</div>
+      <div className="container">
+        <div className="container d-flex justify-content-between align-items-center">
+          <h1>Skills</h1>
+        </div>
       </div>
       <div className="word-cloud" ref={cloudRef}>
         {Skills.map((tech, index) => (
@@ -38,9 +41,9 @@ const WordCloud = () => {
             key={index}
             className="techlogo"
             title={tech.name}
-            style={{ 
+            style={{
               backgroundImage: `url(${tech.logo})`,
-              borderColor: tech.color
+              borderColor: tech.color,
             }}
           />
         ))}
