@@ -34,6 +34,15 @@ const educationExperiences = [
 
 const workExperiences = [
   {
+    title: 'Teaching Assistant for Database Development',
+    institution: 'University of Alabama at Birmingham',
+    date: 'Fall 2024',
+    location: 'Birmingham, USA',
+    description: 'worked as a Teaching assistant for Under Grad/ Grad students under professor Zhang Chengcui in fall 2024 for Database Application Develeopment,',
+    logo: uablogo,
+    id: 'uabdb'
+  },
+  {
     title: 'Systems Engineer',
     company: 'Tata Consultancy Services',
     date: '2022 - 2023',

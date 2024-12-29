@@ -11,7 +11,7 @@ import '../Styles/Timeline.css'
 const events = [
   {
     type: 'education',
-    date: '2023 - present',
+    date: 'Fall 2023 - Spring 2025',
     title: 'Master of Science in Computer Science',
     subtitle: 'University of Alabama at Birmingham',
     location: 'Birmingham, USA',
@@ -20,6 +20,18 @@ const events = [
     buttonText: 'View Details',
     id: 'uabms'
   },
+  {
+    type: 'work',
+    date: 'Fall 2024',
+    title: 'Teaching Assistant for Database Development',
+    subtitle: 'University of Alabama at Birmingham , Dept of Computer Science',
+    location: 'Birmingham, USA',
+    description: 'worked as a Teaching assistant for Under Grad/ Grad students under professor Zhang Chengcui in fall 2024 for Database Application Develeopment,',
+    tags: ['SQL','DB'],
+    buttonText: 'View Details',
+    id: 'uabdb'
+  },
+
   {
     type: 'work',
     date: '2022 - 2023',
