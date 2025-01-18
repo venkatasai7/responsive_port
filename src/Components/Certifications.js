@@ -23,6 +23,16 @@ const Certifications = () => {
     View in Detail
   </button>
 </div>
+{/* Card 0 */}
+<a href="https://www.credly.com/badges/81925b2a-1100-498b-b2c4-e2a6f64429db" target="_blank" rel="noopener noreferrer" style={cardLinkStyle}>
+        <div className="certcard">
+          <img src={cimg1} alt="AWS logo" style={logoStyle} />
+          <div style={textContainerStyle}>
+            <p style={titleStyle}>Solutions Architect</p>
+            <p style={descriptionStyle}>Amazon Web Services (AWS) </p>
+          </div>
+        </div>
+      </a>
 
       {/* Card 1 */}
       <a href="https://www.credly.com/badges/7f612e6c-d356-4f50-bf27-749148e50850/public_url" target="_blank" rel="noopener noreferrer" style={cardLinkStyle}>
