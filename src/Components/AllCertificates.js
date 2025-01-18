@@ -15,6 +15,12 @@ const AllCertificates = () => {
   const cardData = [
     {
       title: 'Amazon Web Services',
+      text: 'AWS Solutions Architect - Associate SAA-C03',
+      image: aws,
+      link: 'https://www.credly.com/badges/81925b2a-1100-498b-b2c4-e2a6f64429db',
+    },
+    {
+      title: 'Amazon Web Services',
       text: 'AWS Certified Cloud Practitioner CLF-02',
       image: aws,
       link: 'https://www.credly.com/earner/earned/badge/7f612e6c-d356-4f50-bf27-749148e50850',
