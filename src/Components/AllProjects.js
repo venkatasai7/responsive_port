@@ -35,12 +35,14 @@ const Card = ({ title, description, link, technologies, id }) => {
 
   return (
     <a
-      href={link}
-      className={`d-flex align-items-center border p-3 mb-3 custom-card ${isVisible ? 'slide-in' : ''}`}
-      id={id}
-      ref={cardRef}
-      style={{ textDecoration: 'none', color: 'inherit' }}
-    >
+  href={link}
+  target="_blank"
+  rel="noopener noreferrer"
+  className={`d-flex align-items-center border p-3 mb-3 custom-card ${isVisible ? 'slide-in' : ''}`}
+  id={id}
+  ref={cardRef}
+  style={{ textDecoration: 'none', color: 'inherit' }}
+>
       <div className="d-flex flex-column flex-grow-1">
         <h5 className="mb-2">{title}</h5>
         <p className="mb-2">{description}</p>
