@@ -8,7 +8,7 @@ import tcslogo from '../images/organizations/tcsjpg.jpg';
 import axiomlogo from '../images/organizations/axiom.jpg';
 import '../Styles/EducationExperience.css';
 import Spinner from './Spinner';
-
+import mindsparklogo from '../images/organizations/MindSpark-Logo.png';
 
 
 const educationExperiences = [
@@ -33,6 +33,15 @@ const educationExperiences = [
 ];
 
 const workExperiences = [
+  {
+    title: 'Full stack Developer',
+    institution: 'University of Alabama at Birmingham',
+    date: 'Jun 2025- Present',
+    location: 'Birmingham, USA',
+    description: 'At MindSpark, you engineered and scaled an AI-powered student assistant platform, integrating ReactJS, Python, OpenAI API, and AWS to support over 1,000 students. You built asynchronous batch-processing pipelines using the OpenAI Batch API and WebHooks, reducing costs by 50% and boosting efficiency by 80%. You also led the design of a dynamic AWS AppConfig-based configuration management system for LLM workflows and created custom Lambda layers for automated, consistent config loading. Additionally, you developed a fault-tolerant backend using AWS Aurora Serverless + RDS Data API, and integrated React with Google Apps Script to deliver modular, maintainable front-end features',
+    logo: mindsparklogo,
+    id: 'mndsprk'
+  },
   {
     title: 'Teaching Assistant for Database Development',
     institution: 'University of Alabama at Birmingham',

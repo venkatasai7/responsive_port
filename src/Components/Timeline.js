@@ -10,6 +10,17 @@ import '../Styles/Timeline.css'
 
 const events = [
   {
+    type: 'work',
+    date: 'June 2025 -  Present',
+    title: 'AWS Cloud Engineer',
+    subtitle: 'School Fuel, MindSpark corp.',
+    location: 'Arizona, USA',
+    description: 'worked as a dev. as a intern on a project using AWS, Gen AI, Python, React JS, Google Appscript',
+    tags: ['AWS','AI','PYTHON'],
+    buttonText: 'View Details',
+    id: 'mndsprk'
+  },
+  {
     type: 'education',
     date: 'Fall 2023 - Spring 2025',
     title: 'Master of Science in Computer Science',

@@ -5,7 +5,7 @@ const Description = () => {
     <div className="container">
     <div className='descriptioncontent'>      
       <h2>
-      I'm a Computer Science grad student with experience as a Systems Engineer at TCS and a software intern at AxiomIO. Skilled in Python, SQL, ML, and cloud computing, I enjoy solving complex problems and am certified in AWS and Azure. Outside of tech, I love movies and TV shows.
+      I'm a Computer Science graduate with hands-on experience in software development, cloud technologies, and AI-driven solutions. Skilled in C++, Python,Java, SQL, and modern cloud platforms, I'm AWS-certified and passionate about building efficient, scalable systems
 
    </h2>
        </div>
