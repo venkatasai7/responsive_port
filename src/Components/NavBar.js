@@ -44,7 +44,7 @@ const NavBar = () => {
               <Nav.Link className="nav-item mx-2" href="/" onClick={() => setExpanded(false)}>Home</Nav.Link>
               <Nav.Link
                 className="nav-item mx-2"
-                href="https://drive.google.com/file/d/1ZoZ4sf1L5_zbXw003OiwelwI_nBmiQjm/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1CWklcKjJcEs2Q31LCbRyNES_hzYC7JMi/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setExpanded(false)}
