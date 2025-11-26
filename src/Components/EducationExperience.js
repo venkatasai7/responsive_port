@@ -15,7 +15,7 @@ const educationExperiences = [
   {
     title: 'Master of Science in Computer Science',
     institution: 'University of Alabama at Birmingham',
-    date: '2023 - present',
+    date: '2023 - 2025',
     location: 'Birmingham, USA',
     description: 'As an international student from India, pursuing my Master’s in Computer Science at the University of Alabama at Birmingham has not only enriched my technical expertise but also allowed me to build valuable connections. Through coursework in advanced algorithms, database development, and machine learning in my first semester, followed by systems programming, deep learning, and cyber risk management in the second, I gained hands-on experience and collaborated with peers and professionals. Now, in my third semester, I’m focused on cloud and computer security, along with data science, all while continuing to expand my professional network.',
     logo: uablogo,
@@ -34,11 +34,11 @@ const educationExperiences = [
 
 const workExperiences = [
   {
-    title: 'Full stack Developer',
-    institution: 'University of Alabama at Birmingham',
+    title: 'Software Engineer',
+    institution: 'MindSpark',
     date: 'Jun 2025- Present',
     location: 'Birmingham, USA',
-    description: 'At MindSpark, you engineered and scaled an AI-powered student assistant platform, integrating ReactJS, Python, OpenAI API, and AWS to support over 1,000 students. You built asynchronous batch-processing pipelines using the OpenAI Batch API and WebHooks, reducing costs by 50% and boosting efficiency by 80%. You also led the design of a dynamic AWS AppConfig-based configuration management system for LLM workflows and created custom Lambda layers for automated, consistent config loading. Additionally, you developed a fault-tolerant backend using AWS Aurora Serverless + RDS Data API, and integrated React with Google Apps Script to deliver modular, maintainable front-end features',
+    description: 'At MindSpark, I engineered and scaled an AI-powered student assistant platform, integrating ReactJS, Python, the OpenAI API, and AWS to support over 1,000 students. I built asynchronous batch-processing pipelines using the OpenAI Batch API and WebHooks, reducing costs by 50% and boosting efficiency by 80%. I led the design of a dynamic AWS AppConfig-based configuration management system for LLM workflows and created custom Lambda layers for automated, consistent configuration loading. Additionally, I developed a fault-tolerant backend using Lambda ,RDS and integrated React with Google Apps Script to deliver modular, maintainable front-end features.',
     logo: mindsparklogo,
     id: 'mndsprk'
   },
@@ -56,16 +56,16 @@ const workExperiences = [
     company: 'Tata Consultancy Services',
     date: '2022 - 2023',
     location: 'Hyderabad, IND',
-    description: 'worked on backend development and cloud-based solutions, with a strong focus on performance optimization and scalable architecture. I developed RESTful APIs using Java Spring Boot and JPA, significantly improving data retrieval efficiency and reducing load times by 30%. One of my key contributions was engineering a taxation module to manage e-accounts for farmers, mills, and warehouses, ensuring compliance with both state and central government policies. I actively participated in code optimization within a Scrum environment, resolving critical bugs and enhancing overall system performance. Collaborating closely with DevOps teams, I helped establish CI/CD pipelines for seamless deployment, which improved release frequency and operational efficiency. I regularly engaged in agile ceremonies and coordinated sprint deliverables using Jira. Additionally, I engineered cloud-based solutions on AWS, utilizing services like EC2, Amazon S3, and Aurora, and built automated infrastructure and release strategies through CI/CD pipelines using Jenkins, Git, and Maven.',
+    description: 'delivering multi-level secure reports for more than 1,000 users. I designed procedures, triggers, and views to enhance data retrieval, integrity, and reporting efficiency. Through thorough unit, integration, and system testing, I identified and resolved workflow issues, improving system stability and reducing production errors by 40%. I improved database performance through query optimization, indexing, and automated workflows, supporting multiple state government accounts. I also collaborated in an Agile/Scrum environment and used GitHub for version control to deliver database development milestones on time. Additionally, I built and maintained ETL pipelines to support reliable data processing.',
     logo: tcslogo,
     id: 'tcs'
   },
   {
-    title: 'Software Developer Engineer',
+    title: 'Software Developer Engineer Intern',
     company: 'Axiom io',
     date: '2021 - 2022',
     location: 'Secundrabad, IND',
-    description:'I have worked on diverse projects involving full-stack development, data engineering, and cloud computing. Using Python with BeautifulSoup and Selenium, I performed large-scale web scraping to extract structured data from unstructured sources. I built secure APIs and user interfaces with Flask and Swagger UI, integrating OAuth and JWT for improved authentication. I also wrote Python scripts to convert data between XML and JSON formats, supporting internal services and automating reports. On the frontend, I developed responsive interfaces using React.js and Material-UI (MUI), ensuring a consistent user experience. Additionally, I completed intensive training in AWS, Go, Python, and Java, applying these skills to hands-on projects focused on backend development and scalable system design.',  
+    description:'I have worked on diverse projects involving full-stack development, data engineering, and cloud computing. Using Python with BeautifulSoup and Selenium, I performed large-scale web scraping to extract structured data from unstructured sources. I built secure APIs and user interfaces with Flask and Swagger UI, integrating OAuth and JWT for improved authentication. I also wrote Python scripts to convert data between XML and JSON formats, supporting internal services and automating reports. On the frontend, I developed responsive interfaces using React.js , ensuring a consistent user experience. Additionally, I completed intensive training in AWS,Python, and Java, applying these skills to hands-on projects focused on backend development and scalable system design.',  
     logo: axiomlogo,
     id: 'axiom'
   }

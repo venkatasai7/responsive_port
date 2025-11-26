@@ -12,7 +12,7 @@
 
 
 import React from 'react';
-import '../Styles/Spinner.css'; // We'll put CSS for the new loader here
+import '../Styles/Spinner.css'; 
 
 const Spinner = () => (
   <div className="spinner-overlay">

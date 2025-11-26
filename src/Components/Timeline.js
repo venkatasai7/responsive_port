@@ -13,7 +13,7 @@ const events = [
     type: 'work',
     date: 'June 2025 -  Present',
     title: 'AWS Cloud Engineer',
-    subtitle: 'School Fuel, MindSpark corp.',
+    subtitle: 'MindSpark.',
     location: 'Arizona, USA',
     description: 'worked as a dev. as a intern on a project using AWS, Gen AI, Python, React JS, Google Appscript',
     tags: ['AWS','AI','PYTHON'],
@@ -57,7 +57,7 @@ const events = [
   {
     type: 'work',
     date: '2021 - 2022',
-    title: 'Software Developement Engineer',
+    title: 'Software Developement Engineer Intern',
     subtitle: 'Axiom io',
     location: 'Secundrabad, IND',
     description: 'Worked on various web development projects using JavaScript and Python.',
