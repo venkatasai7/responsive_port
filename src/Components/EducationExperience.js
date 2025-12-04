@@ -38,7 +38,7 @@ const workExperiences = [
     institution: 'MindSpark',
     date: 'Jun 2025- Present',
     location: 'Birmingham, USA',
-    description: 'At MindSpark, I engineered and scaled an AI-powered student assistant platform, integrating ReactJS, Python, the OpenAI API, and AWS to support over 1,000 students. I built asynchronous batch-processing pipelines using the OpenAI Batch API and WebHooks, reducing costs by 50% and boosting efficiency by 80%. I led the design of a dynamic AWS AppConfig-based configuration management system for LLM workflows and created custom Lambda layers for automated, consistent configuration loading. Additionally, I developed a fault-tolerant backend using Lambda ,RDS and integrated React with Google Apps Script to deliver modular, maintainable front-end features.',
+    description: 'At MindSpark, I engineered and scaled an AI-powered student assistant platform, integrating ReactJS, Python, the OpenAI API, and AWS to support over 1,000 students. I built batch-processing pipelines using the OpenAI Batch API and WebHooks, reducing costs by 50% and boosting efficiency by 80%. I led the design of a dynamic AWS AppConfig-based configuration management system for LLM workflows and created custom Lambda layers for automated, consistent configuration loading. Additionally, I developed backend using Lambda ,RDS and integrated React with Google Apps Script to deliver modular, maintainable front-end features.',
     logo: mindsparklogo,
     id: 'mndsprk'
   },

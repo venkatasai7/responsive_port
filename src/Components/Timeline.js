@@ -12,7 +12,7 @@ const events = [
   {
     type: 'work',
     date: 'June 2025 -  Present',
-    title: 'AWS Cloud Engineer',
+    title: 'Software Engineer',
     subtitle: 'MindSpark.',
     location: 'Arizona, USA',
     description: 'worked as a dev. as a intern on a project using AWS, Gen AI, Python, React JS, Google Appscript',
